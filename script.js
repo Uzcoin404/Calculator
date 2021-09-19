@@ -41,10 +41,12 @@ calcDelete.addEventListener('click', function(){
 day.addEventListener('click', function(){
     main.classList.add('day');
     main.classList.remove('night');
+    night.style.transform = 'rotate(360deg)'
 })
 night.addEventListener('click', function(){
     main.classList.add('night');
     main.classList.remove('day');
+    day.style.transform = 'rotate(360deg)'
 })
 var mousePosition,
     offset = [0,0],
