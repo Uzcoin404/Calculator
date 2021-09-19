@@ -25,7 +25,10 @@ function calculatorEqual(){
     else{
         calcInput.value = eval(calcInput.value);
     }
-}   
+} 
+document.addEventListener('keydown', function(w){
+    console.log(w.which);
+});
 calcEqual.addEventListener('click', function(){
     calculatorEqual();
 });
@@ -75,7 +78,7 @@ document.addEventListener('mousemove', function(event) {
     }
 }, true);  
 document.addEventListener("keydown", function(event) {
-    if (event.keyCode == 13) {
+    if (event.keyCode == 13 || event.keyCode == 187) {
         calculatorEqual();
     }
     if (event.keyCode == 46) {
@@ -87,7 +90,7 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode == 107) {
         calcInput.value += '+';
     }
-    if (event.keyCode == 109) {
+    if (event.keyCode == 109 || event.keyCode == 189) {
         calcInput.value += '-';
     }
     if (event.keyCode == 106) {
@@ -96,34 +99,34 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode == 111) {
         calcInput.value += '/';
     }
-    if (event.keyCode == 96) {
+    if (event.keyCode == 96 || event.keyCode == 48) {
         calcInput.value += '0';
     }
-    if (event.keyCode == 97) {
+    if (event.keyCode == 97 || event.keyCode == 49) {
         calcInput.value += '1';
     }
-    if (event.keyCode == 98) {
+    if (event.keyCode == 98 || event.keyCode == 50) {
         calcInput.value += '2';
     }
-    if (event.keyCode == 99) {
+    if (event.keyCode == 99 || event.keyCode == 51) {
         calcInput.value += '3';
     }
-    if (event.keyCode == 100) {
+    if (event.keyCode == 100 || event.keyCode == 52) {
         calcInput.value += '4';
     }
-    if (event.keyCode == 101) {
+    if (event.keyCode == 101 || event.keyCode == 53) {
         calcInput.value += '5';
     }
-    if (event.keyCode == 102) {
+    if (event.keyCode == 102 || event.keyCode == 54) {
         calcInput.value += '6';
     }
-    if (event.keyCode == 103) {
+    if (event.keyCode == 103 || event.keyCode == 55) {
         calcInput.value += '7';
     }
-    if (event.keyCode == 104) {
+    if (event.keyCode == 104 || event.keyCode == 56) {
         calcInput.value += '8';
     }
-    if (event.keyCode == 105) {
+    if (event.keyCode == 105 || event.keyCode == 57) {
         calcInput.value += '9';
     }
     if (event.keyCode == 110) {
