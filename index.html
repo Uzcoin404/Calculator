@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+<body>
+    
+    <main class="main night">
+        <section class="body">
+            <div class="calc" name="calc">
+                <div class="calc__input">
+                    <input type="text" name="evalInput" readonly="">
+                </div>
+                <div class="calc__functions backspace"><i class="fas fa-backspace"></i></div>
+                <div class="calc__functions delete">C</div>
+                <div class="calc__numbers">
+                    <div class="calc__items calc__number">1</div>
+                    <div class="calc__items calc__number">2</div>
+                    <div class="calc__items calc__number">3</div>
+                    <div class="calc__items calc__number">4</div>
+                    <div class="calc__items calc__number">5</div>
+                    <div class="calc__items calc__number">6</div>
+                    <div class="calc__items calc__number">7</div>
+                    <div class="calc__items calc__number">8</div>
+                    <div class="calc__items calc__number">9</div>
+                    <div class="calc__items calc__number number0">0</div>
+                    <div class="calc__items calc__number">.</div>
+                </div>
+                <div class="calc__chars">
+                    <div class="calc__items calc__char">+</div>
+                    <div class="calc__items calc__char">-</div>
+                    <div class="calc__items calc__char">*</div>
+                    <div class="calc__items calc__char">/</div>
+                </div>
+                <div class="calc__footer calc__equal">=</div>
+                <div class="calc__footer calc__items calc__char">%</div>
+                <div class="calc__scroller">
+                    <p class="icon__tooltip">Siljitish uchun ushlab turib suring!</p>
+                    <i class="fas fa-calculator" id="calc__icon"></i>
+                </div>
+            </div>
+        </section>
+        <span class="day-night" id="day" name="day"><i class="far fa-sun"></i></span>
+        <span class="day-night" id="night" name="night"><i class="far fa-moon"></i></span>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+.day-night{
+    position: absolute;
+    font-size: 24px;
+    padding: 10px;
+    transform: translateY(-50%);
+    background: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.day-night i{
+    padding: 15px;
+    border-radius: 50%;
+    background: #ddd;
+}
+#day{
+    top: 50%;
+    left: 0;
+    color: #ff7c02;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#day:hover{
+    background: #ff7c02;
+}
+main.day #day{
+    background: #ff7c02;
+    transform: translateX(-100%);
+}
+#night{
+    top: 50%;
+    right: 0;
+    color: #0077ff;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#night:hover{
+    background: #0077ff;
+}
+main.night #night{
+    background: #0077ff;
+    display: none;
+} 
+/* Day */
+main.day{
+    transition: all .3s ease;
+    background: #fff;
+}
+
+main.day .calc{
+    background: #e4e4e4;
+}
+main.day .calc__items, main.day .calc__functions, main.day .calc__input{
+    background: #c0c0c0;
+    color: #000;
+}
+main.day .calc__items:hover{
+    background: #919191;
+}
+main.day .calc__input input, main.day .icon__tooltip{
+    background: #fff;
+    color: #000;
+}
+.main.day .icon__tooltip{
+    background: #c0c0c0;
+}
+main.day .calc__char, main.day .calc__functions{
+    color: #ff7c02;
+}
